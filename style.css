@@ -185,3 +185,36 @@ body {
 }
 
 /* Invitation to news letter */
+.ad {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgb(153, 163, 116);
+}
+
+.invite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(141, 141, 114);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px white;
+}
+
+.invite > input {
+    border-radius: 15px;
+    border-color: rgba(133, 94, 94, 0.666);
+    background-color: rgb(124, 179, 228);
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.invite > p {
+    color: rgba(63, 47, 33, 0.632);
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer */
