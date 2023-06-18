@@ -28,13 +28,14 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0;
+
     /* border-top-left-radius: 5px;
     border-top-right-radius: 5px; */
 } 
 
 /* Left hand side */
 .logo {
-    width: 150px;
+    width: 220px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -77,7 +78,7 @@ body {
 
 /* Right hand side */
 .right-links {
-    width: 200px;
+    width: 220px;
     display: flex;
     gap: 16px;
     padding: 0 16px;
@@ -87,6 +88,10 @@ body {
 .right-links > a {
    color: rgba(95, 121, 77, 0.7);
    text-decoration: none;
+   background-color: rgba(245, 209, 162, 0.663);
+   border-radius: 10px;
+   padding: 2px 8px;
+   box-shadow: 1px 1px rgba(106, 124, 93, 0.7);
 }
 
 /* Set up intro block */
@@ -149,6 +154,8 @@ body {
     border-radius: 15px;
     padding: 20px;
     width: 200px;
+    box-shadow: 2px 2px 0 0 rgb(99, 82, 60);
+    border: 2px solid rgb(201, 172, 135);
 }
 
 .card > p {
@@ -194,12 +201,13 @@ body {
 .invite {
     display: flex;
     flex-direction: column;
+    gap: 12px;
     align-items: center;
     justify-content: center;
     background-color: rgb(141, 141, 114);
     padding: 20px;
     border-radius: 10px;
-    border: 2px white;
+    box-shadow: 2px 2px 0 0 rgb(85, 82, 79);
 }
 
 .invite > input {
@@ -221,8 +229,8 @@ body {
 .footer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 5px;
+    padding-top: 6px;
+    padding-bottom: 8px;
     background-color: rgba(183, 177, 177, 0.895);
 }
 
