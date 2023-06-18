@@ -1,14 +1,14 @@
+/* Set image size*/
 body {
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .logo > img {
-    max-width: 30px;
-    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    flex: 0 0 30px;
 }
 
 .intro-img > img {
@@ -17,4 +17,66 @@ body {
 
 .card > img {
     max-width: 300px;
+}
+
+/* Set up header */
+.header {
+    display: flex;
+    background-color: coral;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0px 16px;
+}
+
+.logo {
+    flex: 0 0 150px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+}
+.logo > h1 {
+   font-size: larger;
+   font-weight: 700;
+   color: rgba(154, 205, 50, 1);
+}
+.searchbox {
+   flex: 1 1 auto;
+   padding: 16px;
+   display: flex;
+   justify-items: center;
+}
+.searchbox > .box {
+   flex: 1 1 auto;
+   max-width: 200px;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+   margin-right: 0;
+   border-color: aliceblue;  
+   background-color: aliceblue;
+}
+.searchbox > .button {
+   border-top-right-radius: 15px;
+   border-end-end-radius: 15px;
+   margin-left: 0;
+   border-color: aliceblue;
+   background-color: aliceblue;
+   cursor: pointer;
+}
+
+.left-links {
+    display: flex;
+    gap: 16px;
+}
+
+.left-links > a {
+   color: rgba(95, 121, 77, 0.7);
+   text-decoration: none;
+}
+
+/* Set up intro block */
+.intro-block{
+    display: flex;
+    background-color: burlywood;
 }
