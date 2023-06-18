@@ -2,8 +2,13 @@ body {
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    max-width: 30px;
+    border-radius: 15px;
 }
 
 .intro-img > img {
