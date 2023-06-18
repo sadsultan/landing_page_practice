@@ -137,6 +137,7 @@ body {
     align-items: center;
     gap: 20px;
     padding: 20px 20px;
+    background-color: beige;
 }
 
 .card {
@@ -158,3 +159,29 @@ body {
 }
 
 /* Quote Card */
+.quote-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    background-color: burlywood;
+    padding: 25px;
+}
+
+.quote-card > p {
+    margin: 0;
+    color: rgba(63, 47, 33, 0.632);
+    padding: 0;
+}
+
+.quote-card > .quote {
+    text-align: right;
+    font-style: italic;
+}
+
+.quote-card > .author {
+    
+    font-weight: bold;
+}
+
+/* Invitation to news letter */
