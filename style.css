@@ -2,7 +2,13 @@ body {
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
 }
+
+.intro-img > img {
+    max-width: 200px;
+ }
 
 .card > img {
     max-width: 300px;
