@@ -1,9 +1,13 @@
-/* Set image size*/
 body {
+    /* width: 90%;
     padding: 0;
-    margin: 0;
+    margin: 40px auto; */
+    max-width: 1000px;
+    margin: auto;
+    background-color: antiquewhite ;
 }
 
+/* Set image size*/
 .logo > img {
     width: 30px;
     height: 30px;
@@ -11,12 +15,10 @@ body {
     flex: 0 0 30px;
 }
 
-.intro-img > img {
-    max-width: 200px;
- }
-
 .card > img {
-    max-width: 300px;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 8px;
 }
 
 /* Set up header */
@@ -26,51 +28,63 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: 0px 16px;
-}
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+} 
 
+/* Left hand side */
 .logo {
-    flex: 0 0 150px;
+    width: 150px;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: start;
+    padding: 0 16px;
 }
 .logo > h1 {
    font-size: larger;
+   flex: none;
    font-weight: 700;
    color: rgba(154, 205, 50, 1);
 }
+
+/* Centre */
 .searchbox {
-   flex: 1 1 auto;
    padding: 16px;
+   flex: 1 1 0;
    display: flex;
-   justify-items: center;
+   justify-content: center;
 }
-.searchbox > .box {
+
+.searchbox > input[type="text"] {
+   text-align: center;
+   height: 19px;
    flex: 1 1 auto;
-   max-width: 200px;
+   max-width: 400px;
    border-top-left-radius: 15px;
    border-bottom-left-radius: 15px;
-   margin-right: 0;
    border-color: aliceblue;  
    background-color: aliceblue;
 }
-.searchbox > .button {
+
+.searchbox > input[type="button"] {
    border-top-right-radius: 15px;
    border-end-end-radius: 15px;
-   margin-left: 0;
    border-color: aliceblue;
    background-color: aliceblue;
    cursor: pointer;
 }
 
-.left-links {
+/* Right hand side */
+.right-links {
+    width: 200px;
     display: flex;
     gap: 16px;
+    padding: 0 16px;
+    justify-content: flex-end;
 }
 
-.left-links > a {
+.right-links > a {
    color: rgba(95, 121, 77, 0.7);
    text-decoration: none;
 }
@@ -79,4 +93,68 @@ body {
 .intro-block{
     display: flex;
     background-color: burlywood;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px;
 }
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 200px;
+    padding: 0px 20px;
+    align-self: flex-start;
+}
+
+.intro-text > p,h1 {
+    padding: 0;
+    margin: 0;
+    text-align: end;
+    color: hsla(208, 100%, 97%, 0.741);
+}
+
+.intro-img {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 200px;
+}
+
+.intro-img > p {
+    text-align: end;
+    font-size: small;
+    color: rgba(6, 6, 6, 0.551);
+    padding: 0;
+    margin: 0;
+}
+
+/* Cards section */
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+}
+
+.card > p {
+    color: rgba(63, 47, 33, 0.632);
+    text-align: center;
+    padding: 0;
+    width: 200px;
+}
+
+/* Quote Card */
